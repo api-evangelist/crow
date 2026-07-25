@@ -1,0 +1,31 @@
+generated: '2026-07-18'
+method: searched
+source: https://www.npmjs.com/org/usecrow
+packages:
+- language: javascript
+  registry: npm
+  name: "@usecrow/client"
+  version: 0.1.52
+  url: https://www.npmjs.com/package/@usecrow/client
+  install: npm install @usecrow/client
+  description: Headless client for Crow AI agents - streaming, auth, tools
+  repository: https://github.com/usecrow/sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: "@usecrow/ui"
+  version: 0.1.83
+  url: https://www.npmjs.com/package/@usecrow/ui
+  install: npm install @usecrow/ui
+  description: React components for Crow AI agents - Widget, Copilot
+  repository: https://github.com/usecrow/sdk
+  official: true
+- language: javascript
+  registry: npm
+  name: "@usecrow/envoy"
+  url: https://www.npmjs.com/package/@usecrow/envoy
+  install: npx @usecrow/envoy
+  description: >-
+    Envoy CLI - reads a backend codebase and auto-generates and deploys an MCP
+    server to Crow. Cataloged in detail in cli/crow-cli.yml.
+  official: true

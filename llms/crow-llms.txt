@@ -1,0 +1,33 @@
+# Crow Documentation
+
+## Docs
+
+- [Actions](https://docs.usecrow.ai/actions-overview.md): Configure what your agent can do
+- [Activity](https://docs.usecrow.ai/activity-overview.md): Monitor conversations
+- [Event Callbacks](https://docs.usecrow.ai/callbacks.md): Listen to agent events — messages, tool calls, errors, and more
+- [Client-Side Tools](https://docs.usecrow.ai/client-side-tools.md): Register tools that run in the user's browser
+- [Crow Docs MCP](https://docs.usecrow.ai/crow-docs-mcp.md): Connect your coding agent to Crow's documentation using MCP
+- [Deploy](https://docs.usecrow.ai/deploy-overview.md): Go live with your agent
+- [Embed Widget](https://docs.usecrow.ai/embed-widget.md): Add the Crow widget to your website
+- [Envoy CLI](https://docs.usecrow.ai/envoy.md): Auto-generate an MCP server from your backend codebase
+- [Files](https://docs.usecrow.ai/files.md): Upload documents to your knowledge base
+- [Flutter](https://docs.usecrow.ai/flutter.md): Add Crow to your Flutter app
+- [Identity Verification](https://docs.usecrow.ai/identity-verification.md): Authenticate users in your widget
+- [Introduction](https://docs.usecrow.ai/index.md): Turn your application AI-native with Crow's agent
+- [Integration](https://docs.usecrow.ai/integration-overview.md): Connect your agent to APIs and services
+- [Knowledge Base](https://docs.usecrow.ai/knowledge-base-overview.md): Give your agent product knowledge
+- [External MCP Servers](https://docs.usecrow.ai/mcp-servers.md): Connect third-party MCP servers to your agent
+- [Multi-Language Support](https://docs.usecrow.ai/multi-language.md): Make the AI respond in your user's language
+- [Multi-Subdomain Endpoints](https://docs.usecrow.ai/multi-subdomain-endpoints.md): Route API calls to different subdomains with separate credentials
+- [OpenAPI](https://docs.usecrow.ai/openapi.md): Connect your REST API
+- [OpenAPI Authentication](https://docs.usecrow.ai/openapi-authentication.md): Configure API authentication for your agent
+- [Page Navigation](https://docs.usecrow.ai/page-navigation.md): Let your AI agent navigate users between pages
+- [Quickstart](https://docs.usecrow.ai/quickstart.md): Get your agent live in 5 minutes
+- [React Native](https://docs.usecrow.ai/react-native.md): Add Crow to your React Native app
+- [Sandbox](https://docs.usecrow.ai/sandbox-overview.md): Configure and test your agent
+- [Connect Your MCP Server](https://docs.usecrow.ai/server-side-mcp.md): Point Crow at an MCP server you already have running
+- [Server-Side MCP Authentication](https://docs.usecrow.ai/server-side-mcp-authentication.md): Service keys, identity headers, and how the full auth chain works
+- [Tool Renderers](https://docs.usecrow.ai/tool-renderers.md): Render custom components inline when server-side tools complete
+- [User Suggestions](https://docs.usecrow.ai/user-suggestions.md): Show quick action buttons in the chat widget
+- [Website](https://docs.usecrow.ai/website.md): Crawl and index your website
+- [Workflows](https://docs.usecrow.ai/workflows.md): Create guided multi-step flows

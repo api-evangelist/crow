@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.usecrow.ai/sandbox-overview
+description: >-
+  The Crow Sandbox is a hosted console where you configure your agent and test
+  its responses in real time before deploying. It is a testing/console surface
+  rather than a set of fixed test credentials or test card numbers - Crow
+  publishes no magic test values, so none are recorded here (fabrication
+  avoided).
+console:
+  url: https://app.usecrow.ai/
+  docs: https://docs.usecrow.ai/sandbox-overview
+  configuration:
+  - field: Agent Name
+    description: Displayed in the widget header
+  - field: System Prompt
+    description: Instructions that define agent behavior
+capabilities:
+- Configure the agent (name, system prompt)
+- Test agent responses in real time

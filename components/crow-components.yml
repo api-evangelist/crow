@@ -1,0 +1,41 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.usecrow.ai/embed-widget
+description: >-
+  Crow ships embeddable, client-side UI surfaces for adding its AI agent to a
+  web or mobile app - a script-tag widget and a React component library, plus
+  mobile bindings.
+loader_libraries:
+- name: crow-widget.js
+  type: script-tag
+  url: https://api.usecrow.org/static/crow-widget.js
+  attributes:
+  - data-api-url
+  - data-product-id
+  - data-agent-name
+  - data-variant  # widget (default) or copilot
+  - data-subdomain
+  - data-language
+  - data-context-label
+  runtime_api: window.crow()
+- name: "@usecrow/ui"
+  type: npm
+  url: https://www.npmjs.com/package/@usecrow/ui
+- name: "@usecrow/client"
+  type: npm
+  url: https://www.npmjs.com/package/@usecrow/client
+components:
+- family: Web
+  items:
+  - name: Widget
+    description: Default embeddable chat widget (data-variant=widget)
+  - name: Copilot
+    description: Copilot surface variant (data-variant=copilot)
+- family: Mobile
+  items:
+  - name: Flutter
+    description: Crow agent for Flutter apps
+    docs: https://docs.usecrow.ai/flutter
+  - name: React Native
+    description: Crow agent for React Native apps
+    docs: https://docs.usecrow.ai/react-native

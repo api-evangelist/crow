@@ -1,0 +1,39 @@
+generated: '2026-07-18'
+method: searched
+source: https://docs.usecrow.ai/envoy
+name: Envoy
+package: "@usecrow/envoy"
+description: >-
+  Envoy reads your backend code, generates a complete MCP server, and deploys
+  it to Crow - so your agent can call your API without writing any MCP code. It
+  analyzes routes, schemas, and auth patterns, then builds and deploys a
+  production-ready MCP server.
+install:
+- method: npx
+  command: npx @usecrow/envoy
+auth:
+  env: CROW_API_KEY
+  key_prefix: ck_
+  obtain: app.usecrow.com -> Tools -> Generate Envoy Key
+run_context: >-
+  Run from the root directory containing your project folders (backend,
+  frontend, etc.); Envoy asks which directories are relevant before starting.
+commands:
+- name: generate
+  default: true
+  description: Reads your codebase, generates an MCP server from scratch
+- name: fix
+  description: Loads your existing MCP server and iterates on it (add tools, fix bugs)
+- name: deploy
+  description: Deploys the latest saved version to production
+options:
+- flag: "--api-key <key>"
+  description: Crow API key (alternative to the CROW_API_KEY env var)
+- flag: "--ci"
+  description: CI mode - structured JSON output on stdout
+- flag: "--dirs <a,b,c>"
+  description: Comma-separated directories to scan (CI mode, skips interactive prompt)
+- flag: "--help, -h"
+  description: Show help
+- flag: "--version, -v"
+  description: Show version

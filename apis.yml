@@ -1,7 +1,29 @@
 aid: crow
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/crow.png
 name: Crow
-description: Crow is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Crow is a Y Combinator (Winter 2026) company building an AI infrastructure
+  platform that makes any web or mobile application AI-native. Instead of a
+  simple chatbot, Crow embeds an agent that connects to a product's own APIs
+  and MCP servers, executes workflows, navigates users between pages, and calls
+  server-side and client-side tools from natural-language commands. Developers
+  add Crow with a single script tag or the React SDK, point it at a REST API
+  via OpenAPI or at an MCP server, and configure the agent in a sandbox. Crow
+  also ships the Envoy CLI, which reads a backend codebase and auto-generates
+  and deploys an MCP server, plus a headless client and React UI component
+  library (Widget and Copilot). Crow is initially positioned for commercial
+  real estate but the platform applies to any software product.
 url: https://raw.githubusercontent.com/api-evangelist/crow/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +33,76 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-apis: []
+- Artificial Intelligence
+- AI Agents
+- MCP
+- Model Context Protocol
+- OpenAPI
+- Developer Tools
+- SDK
+- Embeddable Widget
+- Commercial Real Estate
+apis:
+- name: Crow Agent Platform
+  description: >-
+    The Crow agent platform surface — the widget/agent runtime served from
+    api.usecrow.org, configured via the dashboard and consumed through the
+    embed script and the @usecrow/client / @usecrow/ui SDKs. Crow connects the
+    agent to a product's own REST API (via OpenAPI) or MCP server.
+  humanURL: https://docs.usecrow.ai/
+  baseURL: https://api.usecrow.org
+  tags:
+  - AI Agents
+  - MCP
+  - Widget
+  properties:
+  - type: Documentation
+    url: https://docs.usecrow.ai/
+  - type: GettingStarted
+    url: https://docs.usecrow.ai/quickstart
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+common:
+- type: DomainSecurity
+  url: security/crow-domain-security.yml
+- type: Website
+  url: https://www.usecrow.ai/
+- type: DeveloperPortal
+  url: https://app.usecrow.ai/
+- type: Documentation
+  url: https://docs.usecrow.ai/
+- type: GettingStarted
+  url: https://docs.usecrow.ai/quickstart
+- type: SignUp
+  url: https://app.usecrow.ai/
+- type: GitHubOrganization
+  url: https://github.com/usecrow
+- type: TermsOfService
+  url: https://www.usecrow.ai/terms
+- type: PrivacyPolicy
+  url: https://www.usecrow.ai/privacy
+- type: Packages
+  url: packages/crow-packages.yml
+- type: SDKs
+  url: packages/crow-packages.yml
+- type: CLI
+  url: cli/crow-cli.yml
+- type: Components
+  url: components/crow-components.yml
+- type: MCPServer
+  url: mcp/crow-mcp.yml
+- type: Sandbox
+  url: sandbox/crow-sandbox.yml
+- type: LLMsTxt
+  url: llms/crow-llms.txt
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
