@@ -4,18 +4,19 @@ status: published
 source: https://docs.usecrow.ai/crow-docs-mcp
 server:
   name: crow-docs
-  description: >-
-    Crow Docs MCP - connects an AI coding agent to Crow's documentation so it
-    can help integrate the Crow widget, set up identity verification, and
-    configure OpenAPI or MCP server integrations with full context of Crow's
-    APIs and features. Works with Cursor, Claude, Windsurf, and any
-    MCP-compatible tool.
+  description: Crow Docs MCP - connects an AI coding agent to Crow's documentation so it can help integrate
+    the Crow widget, set up identity verification, and configure OpenAPI or MCP server integrations with
+    full context of Crow's APIs and features. Works with Cursor, Claude, Windsurf, and any MCP-compatible
+    tool.
   transport: http
   url: https://docs.usecrow.ai/mcp
   install:
     cursor: cursor://anysphere.cursor-deeplink/mcp/install?name=crow&config=eyJ1cmwiOiJodHRwczovL2RvY3MudXNlY3Jvdy5haS9tY3AifQ%3D%3D
-notes: >-
-  This is a documentation-serving MCP server. Separately, Crow's core product
-  turns a customer's own backend into an MCP server (see the Envoy CLI in
-  cli/crow-cli.yml) - that is a per-customer generated server, not a single
-  hosted Crow endpoint, so it is not cataloged as a fixed tool list here.
+notes: This is a documentation-serving MCP server. Separately, Crow's core product turns a customer's
+  own backend into an MCP server (see the Envoy CLI in cli/crow-cli.yml) - that is a per-customer generated
+  server, not a single hosted Crow endpoint, so it is not cataloged as a fixed tool list here.
+deployment:
+  mode: remote
+  verified: searched
+  checked: '2026-08-12'
+  source: catalog MCP census
