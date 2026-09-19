@@ -80,6 +80,10 @@ apis:
   tags:
   - AI Agents
   - MCP
+  - Widgets
+  tags_raw:
+  - AI Agents
+  - MCP
   - Widget
   properties:
   - type: Documentation
